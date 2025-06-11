@@ -1,0 +1,86 @@
+<app-navbar></app-navbar>
+<div class="card"></div>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Malla Curricular - Carrera Desarrollo de Software</h2>
+    <div class="row">
+        <!-- 1er Semestre -->
+        <div class="col-12 mb-3">
+            <h4>1° Semestre</h4>
+        </div>
+        <div class="col-md-4 mb-4" *ngFor="let materia of [
+            {nombre:'Introducción a la Programación', descripcion:'Conceptos básicos de programación y algoritmos.'},
+            {nombre:'Matemática Básica', descripcion:'Fundamentos matemáticos para la computación.'},
+            {nombre:'Lógica de Programación', descripcion:'Pensamiento lógico y resolución de problemas.'},
+            {nombre:'Comunicación Oral y Escrita', descripcion:'Desarrollo de habilidades comunicativas.'},
+            {nombre:'Fundamentos de Computación', descripcion:'Principios y componentes de los sistemas computacionales.'}
+        ]">
+            <div class="card">
+                <div class="image"></div>
+                <div class="content">
+                    <span class="title">{{materia.nombre}}</span>
+                    <p class="desc">{{materia.descripcion}}</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 mb-3">
+            <h4>2° Semestre</h4>
+        </div>
+        <div class="col-md-4 mb-4" *ngFor="let materia of [
+            {nombre:'Programación Orientada a Objetos', descripcion:'Principios y técnicas de POO.'},
+            {nombre:'Base de Datos I', descripcion:'Introducción a bases de datos relacionales.'},
+            {nombre:'Matemática Discreta', descripcion:'Estructuras matemáticas para informática.'},
+            {nombre:'Inglés Técnico I', descripcion:'Inglés aplicado a la tecnología.'},
+            {nombre:'Sistemas Operativos', descripcion:'Conceptos y funcionamiento de sistemas operativos.'}
+        ]">
+            <div class="card">
+                <div class="image"></div>
+                <div class="content">
+                    <span class="title">{{materia.nombre}}</span>
+                    <p class="desc">{{materia.descripcion}}</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 mb-3">
+            <h4>3° Semestre</h4>
+        </div>
+        <div class="col-md-4 mb-4" *ngFor="let materia of [
+            {nombre:'Estructura de Datos', descripcion:'Manejo y organización de datos.'},
+            {nombre:'Base de Datos II', descripcion:'Administración avanzada de bases de datos.'},
+            {nombre:'Desarrollo Web I', descripcion:'Fundamentos del desarrollo web.'},
+            {nombre:'Inglés Técnico II', descripcion:'Inglés avanzado para informática.'},
+            {nombre:'Redes de Computadoras', descripcion:'Principios de redes y comunicación de datos.'}
+        ]">
+            <div class="card">
+                <div class="image"></div>
+                <div class="content">
+                    <span class="title">{{materia.nombre}}</span>
+                    <p class="desc">{{materia.descripcion}}</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 mb-3">
+            <h4>4° Semestre</h4>
+        </div>
+        <div class="col-md-4 mb-4" *ngFor="let materia of [
+            {nombre:'Desarrollo Web II', descripcion:'Desarrollo web avanzado y frameworks.'},
+            {nombre:'Ingeniería de Software', descripcion:'Procesos y metodologías de desarrollo de software.'},
+            {nombre:'Programación Móvil', descripcion:'Desarrollo de aplicaciones móviles.'},
+            {nombre:'Gestión de Proyectos', descripcion:'Planificación y gestión de proyectos de software.'},
+            {nombre:'Ética Profesional', descripcion:'Ética y responsabilidad profesional en informática.'}
+        ]">
+            <div class="card">
+                <div class="image"></div>
+                <div class="content">
+                    <span class="title">{{materia.nombre}}</span>
+                    <p class="desc">{{materia.descripcion}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

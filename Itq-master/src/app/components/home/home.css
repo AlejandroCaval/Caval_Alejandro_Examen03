@@ -1,0 +1,65 @@
+/* home.css */
+
+/* Personaliza el jumbotron */
+.jumbotron {
+    background: linear-gradient(135deg, #007bff 80%, #0056b3 100%);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+/* Botón principal */
+.jumbotron .btn {
+    transition: background 0.2s, color 0.2s;
+}
+.jumbotron .btn:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Títulos */
+h1, h2 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Lista de beneficios */
+.list-group-item {
+    border: none;
+    background: transparent;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+.list-group-item::before {
+    content: "✔";
+    color: #007bff;
+    position: absolute;
+    left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Responsive: ajusta margen de tarjetas en pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .card-img-top {
+        height: 140px;
+    }
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+}
